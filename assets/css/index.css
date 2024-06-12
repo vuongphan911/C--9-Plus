@@ -1,0 +1,465 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*      NAV     */
+#nav{
+    background: rgb(248,249,250);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+#nav a img{
+    border-radius: 50%;
+    width: 50px;
+}
+#nav .nav-item a{
+    font-size: 1.2em;
+}
+#nav .effect-nav{
+    border-right: 1px solid black;
+    border-left: 1px solid #000;
+}
+/*      BANNER*/
+#banner img{
+    margin-top: 75px;
+    width: 100%;
+    height: 80vh;
+}
+
+/*      PIC HEAD     */
+#pic-head{
+    transform: translateY(-15%);
+}
+#pic-head .heyyy{
+    background-color: #fff;
+    padding:32px 48px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 25px rgb(3, 3, 3, 0.5);
+}
+#pic-head .row img{
+    width: 100%;
+    height: 40vh;
+    padding-top: 15px;
+
+}
+#pic-head .heyyy{
+    width: 60%;
+    margin: 0 auto;
+}
+.head{
+    text-align: center;
+    margin-top: 32px;
+}
+.head h3{
+    font-weight: 700;
+}
+.head .effect-head{
+    color:rgb(255,147,1);
+}
+.head hr{
+    width: 30%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    background-color: rgb(126, 119, 119);
+    height: 2px;
+}
+.head .special-head{
+    margin-top: 32px;
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+}
+.head .special-head button{
+    width: 80%;
+    background: linear-gradient(to top, rgb(254,202,22), rgb(244,85,14));
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+}
+.head .special-head i{
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+.head .special-head button a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+#why .body-why{
+    margin-top: 32px; 
+}
+
+.body-why .row .col-md-6{
+    margin: 32px auto;
+}
+.col-md-6 .chead{
+    padding: 24px;
+    font-size: 2em;
+    text-align: center;
+}
+.col-md-6 .chead .pick i{
+    border: 1px solid #000;
+    padding: 15px;
+    border-radius: 50%;
+}
+.col-md-7 .row .col-md-6 .outline{
+    box-shadow: 5px 7px 15px rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+.outline .order{
+    border: 1px solid #000;
+    margin: 15px 17px;
+}
+#why{
+    margin-top: 32px;
+}
+#why .col-md-5{
+    margin-top: 32px;
+}
+#why .col-md-7 .first-art{
+    background-color: rgb(20,77,156);
+    color: #fff;
+}
+#why .col-md-7 .first-art i{
+    border: 1px solid #fff;
+}
+/*      HOW REGISTER        */
+#content.container-fluid{
+    margin-top: 75px;
+    background: RGB(215 212 206);
+    
+}
+#how-register .row-flow{
+    display: flex;
+    flex-wrap: wrap;
+}
+#how-register .row-flow{
+    display: flex;
+    justify-content: space-around;
+}
+#how-register table .out-table{
+    background-color: rgb(245,245,245);
+    margin-top: 50px;
+    margin-left: 5%;
+    padding: 32px;
+    border-radius: 25px;
+    box-shadow: 5px 7px 15px rgb(0, 0, 0, 0.4);
+    position: relative;
+    height: 23vh;
+    z-index: 2;
+    
+}
+#how-register table .out-th p{
+    padding: 32px;
+    background:linear-gradient(to left, rgb(255,93,45), rgb(255,171,12));
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-top: 50px;
+    border-radius: 25px;
+    color: #fff;
+}
+#how-register table .out-table::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            left: 0;
+            top: 23%;
+            height: fit-content;
+            border-top: 50px solid transparent;
+            border-right: 100px solid rgb(245,245,245);
+            border-bottom: 50px solid transparent;
+            transform: translateX(-30px);  
+            z-index: -1;
+}
+.modal-body ol{
+    padding-left: 16px;
+}
+#how-register button{
+    background:linear-gradient(to left, rgb(255,93,45), rgb(255,171,12));
+    color: #fff;
+}
+
+/* 
+/*      SLIDE         */
+#procedure{
+    margin-top: 75px;
+    position: relative;
+    }   
+#procedure .slide-body{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 530px;
+    margin-top: 189px;
+}
+
+
+#slide{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    margin: 23vh auto auto 8vh;
+}
+.item{
+    width: 220px;
+    height: 250px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 1s;
+    position: absolute;
+    background-size: 200%;
+    z-index: 10;
+}
+#slide .item:nth-child(1){
+    transform: translate(-110%);
+    opacity: 0;
+    background-position: 0% 50%;
+}
+#slide .item:nth-child(2){
+    transform: translate(0%);
+    background-position: 20% 50%;
+}
+#slide .item:nth-child(3){
+    transform: translate(110%);
+    background-position: 40% 50%;
+}
+#slide .item:nth-child(4){
+    transform: translate(220%);
+    background-position: 50% 50%;
+}
+#slide .item:nth-child(5){
+    transform: translate(330%);
+    background-position: 60% 50%;
+}
+#slide .item:nth-child(6){
+    transform: translate(440%);
+    background-position: 80% 50%;
+}
+#slide .item:nth-child(n+7){
+    transform: translate(550%);
+    background-position: 100% 50%;
+    opacity: 0;
+}
+.item .content{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(242, 244, 244);
+    width: 100%;
+    padding: 0 10%;
+    font-family: system-ui;
+    text-align: center;
+    box-shadow: 0 15px 50px #b9b9b9;
+    transition: .5s;
+    overflow: hidden;
+    max-height: 0;
+}
+.item:hover .content{
+    max-height: 100px;
+}
+.item:hover{
+    background-size: 250%;
+}
+.buttons{
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.buttons button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: .5s;
+}
+.buttons button:hover{
+    background-color: greenyellow;
+}
+
+
+/*      STUDENT     */
+#student{
+    margin-top: 60vh;
+    overflow: hidden;
+}
+#on-student{    
+    position: relative;
+    top: 50%;
+    height: 700px;
+}
+#on-student .ask{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    width: 40%;
+}
+.ask{
+    width: 55%;
+    height: 600px;
+    display: inline-block;
+    transition: 1s;
+    position: absolute;
+    z-index: 1;
+    margin: 0 64px;
+}
+.ask:nth-child(1){
+    transform: translate(-120%);
+    opacity: 0;
+}
+.ask:nth-child(2){
+    transform: translate(0%);
+}
+.ask:nth-child(3){
+    transform: translate(116%);
+}
+.ask:nth-child(n+4){
+    transform: translate(234%);
+    opacity: 0;
+}
+.ask .top-ask{
+    width: 80%;
+    margin: 16px auto;
+}
+.ask .top-ask img{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.button-secont{
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+}
+.button-secont button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: .5s;
+}
+.button-secont button:hover{
+    background-color: #b9b9b9;
+}
+.bottom-ask h3{
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(244,90,14), rgb(252,180,21));
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5em;
+}
+.bottom-ask p{
+    text-align: justify;
+    padding: 16px;
+}
+/*      FOOTER      */
+#footer{
+    margin-top: 75px;
+    background-color: #c9f1f3;
+}
+#footer .out-foot .container{
+    padding: 24px;
+}
+.row > .col-md-6 h3{
+    text-align: center;
+    color: orange;
+}
+.row > .col-md-6 ul li{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.row > .col-md-6 ul li a{
+    text-decoration: none;
+    color: #000;
+    margin: 16px;
+    transition: all .3s;
+}
+.row > .col-md-6 ul li i{
+    font-size: 1.5em;
+}
+
+.row > .col-md-6 ul li a:hover{
+    text-decoration:underline;
+    color: red;
+}
+
+
+#posts .row .col-md-6 img{
+    width: 100%;
+    margin: 16px auto;
+    transition: .7s linear;
+    
+}
+#posts .row .col-md-6 img:hover{
+    transform: translateY(-15%);
+}
+.row .slogan{
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    margin-top: 32px;
+}
+.row .slogan p{
+    padding-top: 8px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
